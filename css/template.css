@@ -1,0 +1,410 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  padding: 1rem 2rem;
+  align-items: center;
+}
+
+:root {
+  --primary-font-family: "Roboto", sans-serif;
+  --primary-color: #fff;
+  --secondary-color: #7f7a7a;
+  --tertiary-color: #000;
+  --quaternary-color: #484545;
+  --quinary-color: #ec1c24;
+}
+
+html {
+  font-family: var(--primary-font-family);
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 40px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+header {
+  color: var(--primary-color);
+}
+
+header .topbar {
+  color: var(--primary-color);
+  background-color: var(--quaternary-color);
+}
+
+header .topbar .flex-container {
+  padding: 0.5rem 2rem;
+}
+
+header .topbar .call-us {
+  display: block;
+  flex: 6;
+  /* background-color: #15130a; */
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffd600;
+}
+
+header .topbar .socmed .flex-container {
+  justify-content: end;
+}
+
+header .topbar .socmed {
+  display: block;
+  /* background-color: #890207; */
+  flex: 6;
+  text-align: right;
+}
+
+header .topbar .alt-share {
+  display: none;
+  flex: 6;
+  text-align: right;
+}
+
+header .topbar .socmed ul .item {
+  border: 0;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  width: 30px;
+  height: 30px;
+}
+
+header .topbar .socmed ul .item:not(:last-child) {
+  margin: 0 1rem 0 0;
+}
+
+header .topbar .socmed ul .item a {
+  color: var(--secondary-color);
+  display: block;
+  text-align: center;
+  width: 25px;
+  margin: -2px 0 0 -5px;
+  transition: color 0.5s ease-in;
+  --webkit-transition: color 0.5s ease-in;
+  --o-transition: color 0.5s ease-in;
+  --moz-transition: color 0.5s ease-in;
+  --ms-transition: color 0.5s ease-in;
+}
+
+header .topbar .socmed ul .item a:hover {
+  color: var(--quinary-color);
+}
+
+header .flex-container {
+  width: min(1920px, 100%);
+  margin: auto;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  width: 11.25rem;
+}
+
+nav {
+  display: block;
+  color: var(--secondary-color);
+  flex: 9;
+}
+
+nav ul.flex-container {
+  justify-content: end;
+}
+
+nav li:not(:last-child) {
+  margin: 0 1rem 0 0;
+}
+
+header nav a:hover {
+  color: var(--tertiary-color);
+  transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+}
+
+.burger {
+  display: none;
+  flex: 8;
+}
+
+.fa-solid {
+  width: 10%;
+  float: right;
+  cursor: pointer;
+  color: var(--tertiary-color);
+}
+
+.search {
+  display: block;
+  flex: 2;
+}
+
+.fa-magnifying-glass {
+  color: var(--secondary-color);
+}
+
+main {
+  background-color: var(--primary-color);
+  height: 100vh;
+}
+
+.hero .item {
+  /* background-color: yellow; */
+  background-image: url("/img/bg-hero-image.png");
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+}
+
+.hero .item .flex-container {
+  padding: 0rem 2rem;
+  width: min(1920px, 100%);
+  margin: auto;
+}
+
+.hero .item .left-column {
+  flex: 6;
+}
+
+.left-column img {
+  width: 100%;
+}
+
+.left-column .replacer {
+  display: block;
+  width: 500px;
+  height: 450px;
+}
+
+.hero .item .right-column {
+  flex: 6;
+  color: var(--primary-color);
+}
+
+.hero .item .right-column .title h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+}
+
+.right-column .description {
+  display: block;
+  margin: 16px 0 0 0;
+}
+
+.packages {
+  width: min(1920px, 100%);
+  margin: auto;
+}
+
+.packages .create {
+  background-color: #ffd600;
+  flex: 4;
+}
+
+.packages .grow {
+  background-color: #7ecdff;
+  flex: 4;
+}
+
+.packages .expand {
+  background-color: #890207;
+  flex: 4;
+}
+
+footer {
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  display: block;
+  position: relative;
+}
+
+footer .flex-container {
+  width: min(1920px, 100%);
+  margin: auto;
+}
+
+footer .left-column {
+  flex: 4;
+}
+
+footer .left-column .flex-container {
+  flex-direction: column;
+}
+
+footer .left-column .bottom-menu ul li {
+  display: inline-block;
+}
+
+footer .left-column .bottom-menu ul li:not(:last-child)::after {
+  content: " |";
+}
+
+footer .left-column ul {
+  margin: 1rem 0 0 0;
+  text-align: left;
+}
+
+footer .head-title {
+  font-size: 42px;
+}
+
+footer .left-column .bottom-menu ul li a {
+  color: var(--secondary-color);
+  transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+  -ms-transition: color 0.5s ease-in;
+}
+
+footer .left-column .bottom-menu ul li a:hover {
+  color: var(--primary-color);
+}
+
+footer .left-column .microsoft-gp {
+  width: 250px;
+}
+
+footer .left-column .microsoft-bc {
+  width: 250px;
+}
+
+footer .mid-column {
+  flex: 2;
+  text-align: left;
+}
+
+.head-list {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+footer .mid-column li:not(:last-child) {
+  margin: 0 0 0.6rem 0;
+}
+
+footer .mid-column li a {
+  color: var(--secondary-color);
+  transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+  -ms-transition: color 0.5s ease-in;
+}
+
+footer .mid-column li a:hover {
+  color: var(--primary-color);
+}
+
+footer .right-column {
+  flex: 2;
+  margin: -4rem 0 0 0;
+}
+
+footer .right-column li:not(:last-child) {
+  margin: 0 0 0.6rem 0;
+}
+
+footer .right-column li a {
+  color: var(--secondary-color);
+  transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+  -ms-transition: color 0.5s ease-in;
+}
+
+footer .right-column li a:hover {
+  color: var(--primary-color);
+}
+
+/* 1060 */
+@media only screen and (max-width: 1060px) {
+  footer .flex-container {
+    flex-direction: column-reverse;
+  }
+
+  :is(footer .left-column, footer .mid-column, footer .right-column) {
+    width: 100%;
+  }
+
+  footer .left-column ul {
+    text-align: center;
+  }
+
+  footer .mid-column ul {
+    text-align: center;
+  }
+
+  footer .right-column {
+    flex: 2;
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+}
+
+/* 750px */
+@media only screen and (max-width: 750px) {
+  nav {
+    display: none;
+  }
+
+  .search {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+
+  header .topbar .call-us {
+    display: none;
+  }
+
+  header .topbar .socmed {
+    display: none;
+  }
+
+  header .topbar .alt-share {
+    display: block;
+    cursor: pointer;
+  }
+
+  .left-column .replacer {
+    display: none;
+  }
+}
+/* 748 */
+@media only screen and (max-width: 748px) {
+  .hero .item .flex-container {
+    flex-direction: column;
+    padding: 2.5rem;
+  }
+
+  .packages .flex-container {
+    flex-direction: column;
+  }
+
+  :is(.create, .grow, .expand) {
+    width: 100%;
+  }
+}
