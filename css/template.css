@@ -25,6 +25,7 @@
 
 html {
   font-family: var(--primary-font-family);
+  background-color: var(--tertiary-color);
 }
 
 h1 {
@@ -43,6 +44,7 @@ a {
 
 header {
   color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 header .topbar {
@@ -120,7 +122,7 @@ header .flex-container {
 }
 
 .logo img {
-  width: 11.25rem;
+  width: 13rem;
 }
 
 nav {
@@ -264,7 +266,7 @@ footer .left-column .bottom-menu ul li:not(:last-child)::after {
 
 footer .left-column ul {
   margin: 1rem 0 0 0;
-  text-align: left;
+  text-align: center;
 }
 
 footer .head-title {
@@ -338,6 +340,66 @@ footer .right-column li a:hover {
   color: var(--primary-color);
 }
 
+footer .bottom-logo-socmed .logo {
+  text-align: center;
+}
+
+footer .bottom-logo-socmed .logo img {
+  width: 180px;
+}
+
+footer .bottom-logo-socmed .socmed {
+  margin: auto;
+  width: 100%;
+}
+
+footer .bottom-logo-socmed .socmed .flex-container {
+  justify-content: center;
+}
+
+footer .bottom-logo-socmed .socmed ul .item {
+  text-align: center;
+  border: 0;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  width: 30px;
+  height: 30px;
+}
+
+footer .bottom-logo-socmed .socmed ul .item:not(:last-child) {
+  margin: 0 1rem 0 0;
+}
+
+footer .bottom-logo-socmed .socmed ul .item a {
+  color: var(--secondary-color);
+  display: block;
+  text-align: center;
+  width: 25px;
+  margin: -2px 0 0 -5px;
+  transition: color 0.5s ease-in;
+  --webkit-transition: color 0.5s ease-in;
+  --o-transition: color 0.5s ease-in;
+  --moz-transition: color 0.5s ease-in;
+  --ms-transition: color 0.5s ease-in;
+}
+
+footer .bottom-logo-socmed .socmed ul .item a:hover {
+  color: var(--quinary-color);
+}
+
+footer .copyrights {
+  text-align: center;
+  margin: 0 0 3rem 0;
+  font-size: 16px;
+}
+
+footer .copyrights span {
+  font-weight: 600;
+}
+
+/* ===================== BEGIN MEDIA QUERIE ===================== */
+
 /* 1060 */
 @media only screen and (max-width: 1060px) {
   footer .flex-container {
@@ -348,10 +410,6 @@ footer .right-column li a:hover {
     width: 100%;
   }
 
-  footer .left-column ul {
-    text-align: center;
-  }
-
   footer .mid-column ul {
     text-align: center;
   }
@@ -360,6 +418,18 @@ footer .right-column li a:hover {
     flex: 2;
     margin: 0 0 1rem 0;
     text-align: center;
+  }
+
+  footer .bottom-logo-socmed {
+    flex-direction: column-reverse;
+  }
+
+  footer .bottom-logo-socmed .logo {
+    margin: 3rem 0 0 0;
+  }
+
+  footer .bottom-logo-socmed .socmed .flex-container {
+    flex-direction: row;
   }
 }
 
