@@ -1,7 +1,7 @@
 const NavMenuSlide = () => {
   const iconburger = document.querySelector(".burger");
   const mobileMenu = document.querySelector(".mobile-menu");
-  const closeMobileMenu = document.querySelector(".close");
+  const closeMobileMenu = document.querySelector(".mobile-menu .close");
 
   iconburger.addEventListener("click", showMenu);
   closeMobileMenu.addEventListener("click", closeMenu);

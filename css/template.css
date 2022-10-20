@@ -42,6 +42,10 @@ a {
   color: var(--secondary-color);
 }
 
+.mobile-social-menu {
+  display: none;
+}
+
 .mobile-menu {
   display: none;
 }
@@ -60,13 +64,17 @@ header .topbar .flex-container {
   padding: 0.5rem 2rem;
 }
 
-header .topbar .call-us {
+.call-us {
   display: block;
   flex: 6;
   /* background-color: #15130a; */
   font-weight: bold;
   font-size: 14px;
   color: #ffd600;
+}
+
+.text-color-black {
+  color: var(--tertiary-color);
 }
 
 header .topbar .socmed .flex-container {
@@ -84,6 +92,10 @@ header .topbar .alt-share {
   display: none;
   flex: 6;
   text-align: right;
+}
+
+.fa-share-alt {
+  cursor: pointer;
 }
 
 header .topbar .socmed ul .item {
@@ -439,6 +451,25 @@ footer .copyrights span {
 
 /* 750px */
 @media only screen and (max-width: 750px) {
+  .mobile-social-menu {
+    position: fixed;
+    background-color: var(--primary-color);
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    display: block;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .mobile-social-menu .flex-container {
+    flex-direction: column;
+  }
+
+  .mobile-social-menu .mobile-phone-number {
+    background-color: rgb(158, 61, 61);
+  }
+
   .mobile-menu {
     display: block;
     position: fixed;
@@ -497,7 +528,6 @@ footer .copyrights span {
 
   header .topbar .alt-share {
     display: block;
-    cursor: pointer;
   }
 
   .left-column .replacer {
