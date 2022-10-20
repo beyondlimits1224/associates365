@@ -42,6 +42,10 @@ a {
   color: var(--secondary-color);
 }
 
+.mobile-nav {
+  display: none;
+}
+
 header {
   color: var(--primary-color);
   background-color: var(--primary-color);
@@ -435,6 +439,28 @@ footer .copyrights span {
 
 /* 750px */
 @media only screen and (max-width: 750px) {
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    background-color: var(--primary-color);
+    height: auto;
+    width: 100%;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .mobile-menu .flex-container {
+    background-color: #890207;
+    height: 100vh;
+  }
+
+  .mobile-menu ul.flex-container {
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 12;
+  }
+
   nav {
     display: none;
   }
