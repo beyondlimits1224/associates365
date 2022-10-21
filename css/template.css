@@ -464,10 +464,52 @@ footer .copyrights span {
 
   .mobile-social-menu .flex-container {
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .mobile-social-menu .mobile-phone-number {
-    background-color: rgb(158, 61, 61);
+    margin: 8rem 0 0 0;
+    font-size: 1.4rem;
+  }
+
+  .mobile-social-menu .mobile-socmed {
+    margin: 1rem 0 2rem 0;
+  }
+
+  .mobile-social-menu .mobile-socmed .flex-container {
+    flex-direction: row;
+  }
+
+  .mobile-social-menu .mobile-socmed ul .item {
+    text-align: center;
+    border: 0;
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+    width: 30px;
+    height: 30px;
+  }
+
+  .mobile-social-menu .mobile-socmed ul .item:not(:last-child) {
+    margin: 0 1rem 0 0;
+  }
+
+  .mobile-social-menu .mobile-socmed ul .item a {
+    color: var(--secondary-color);
+    display: block;
+    text-align: center;
+    width: 25px;
+    margin: -2px 0 0 -5px;
+    transition: color 0.5s ease-in;
+    --webkit-transition: color 0.5s ease-in;
+    --o-transition: color 0.5s ease-in;
+    --moz-transition: color 0.5s ease-in;
+    --ms-transition: color 0.5s ease-in;
+  }
+
+  .mobile-social-menu .mobile-socmed ul .item a:hover {
+    color: var(--quinary-color);
   }
 
   .mobile-menu {
