@@ -186,7 +186,6 @@ header nav a:hover {
 
 main {
   background-color: var(--primary-color);
-  height: 100vh;
 }
 
 .hero .item {
@@ -205,10 +204,11 @@ main {
 
 .hero .item .left-column {
   flex: 6;
+  text-align: center;
 }
 
 .left-column img {
-  width: 100%;
+  width: 500px;
 }
 
 .left-column .replacer {
@@ -220,6 +220,7 @@ main {
 .hero .item .right-column {
   flex: 6;
   color: var(--primary-color);
+  margin: 0 0 0 1rem;
 }
 
 .hero .item .right-column .title h1 {
@@ -581,6 +582,15 @@ footer .copyrights span {
   .hero .item .flex-container {
     flex-direction: column;
     padding: 2.5rem;
+  }
+
+  .hero .item .flex-container .left-column {
+    text-align: center;
+  }
+
+  .hero .item .flex-container .left-column img {
+    width: 60%;
+    margin: auto;
   }
 
   .packages .flex-container {
